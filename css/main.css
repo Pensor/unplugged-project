@@ -99,6 +99,9 @@ textarea {
    ========================================================================== */
 
 /* -------------------- Base Header - Footer Styles -------------------- */
+.content-wrapper {
+  width: 90%;
+}
 
 header,
 footer {
@@ -110,6 +113,10 @@ footer {
 
 /* Header Styles */
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -118,7 +125,7 @@ header .content-wrapper {
 }
 
 header .header-divider {
-
+  width: 100%;
 }
 
 header nav {
@@ -126,21 +133,25 @@ header nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
+  justify-content: space-around;
   list-style: none;
+  width: 45%;
 }
 
 /* Footer Styles */
 
 footer .content-wrapper {
-
+  width: 55%;
+  margin: 50px 0;
 }
 
 footer .footer-content {
-
+  text-align: center;
 }
 
 footer .social {
@@ -155,14 +166,17 @@ footer .social-icons {
   align-items: center;
 }
 
-footer .copyright {
-
+footer p {
+  margin: 0;
 }
 
 footer .contact {
-
+  
 }
 
+footer .copyright {
+
+}
 /* -------------------- Mobile Styles Homepage-------------------- */
 
 main .content-wrapper {
@@ -181,10 +195,15 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-bottom: 55px;
 }
 
 .form-description {
 
+}
+
+.form-description h3 {
+  margin: 30px 0 20px 0;
 }
 
 .form {
@@ -196,6 +215,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 55px 0;
 }
 
 .features .features-items {
@@ -203,6 +223,10 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.features article {
+  width: 45%;
 }
 
 .fontawesome-icon {
@@ -218,6 +242,11 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0;
+}
+
+.reviews h3 {
+  width: 50%;
 }
 
 /* -------------------- Mobile Styles About-------------------- */
