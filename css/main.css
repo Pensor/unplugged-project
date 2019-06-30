@@ -105,26 +105,38 @@ html {
 }
 
 body {
+  color: #e2e3ed;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
+  font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
+  font-size: 1.125em;
+  font-weight: 500;
+  line-height: 1.5em;
 }
 
 p {
-  font-size: 1.125em;
-  line-height: 1.5em;
+  font-size: 0.875em;
+  line-height: 1.125em;
 }
- 
+
+ul {
+  font-weight: bold;
+  font-size: 1.125em;
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+}
+
 img {
  
 }
@@ -153,6 +165,7 @@ a {
 
 header,
 footer {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,8 +187,10 @@ header .content-wrapper {
 }
 
 header .header-divider {
+  background-color: #3a3a3a;
   width: 100%;
   height: 1px;
+  margin-top: 20px;
 }
 
 header nav {
@@ -189,7 +204,6 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  list-style: none;
   width: 100%;
 }
 
@@ -250,10 +264,37 @@ footer .copyright {
 }
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=email] {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  color: #2a423a;
+  font-style: italic;
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .features {
@@ -279,6 +320,7 @@ aside {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
@@ -291,6 +333,7 @@ aside {
 }
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -308,6 +351,7 @@ aside {
 /* -------------------- Mobile Styles About-------------------- */
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -319,6 +363,7 @@ aside {
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,6 +377,7 @@ aside {
 /* -------------------- Mobile Styles FAQ-------------------- */
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -444,6 +490,17 @@ aside {
 
   @media only screen and (min-width: 768px) {
   /* General styles */
+  
+  h2 {
+    font-size: 2.25em;
+    /* line-height: 3em; */
+  }
+
+  h3,
+  h4 {
+    font-size: 1.5em;
+    line-height: 1.875em;
+  }
 
   .content-wrapper {
     max-width: 640px;
@@ -522,7 +579,7 @@ aside {
   .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 60px;
   }
 
@@ -563,12 +620,30 @@ aside {
   }
 
   .faq h2 {
+    font-size: 2.25em;
     width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 0.875em;
+    line-height: 1.125em;
   }
 }
   
 @media only screen and (min-width: 1200px) {
 /*Desktop styles here*/
+  /* Genral Styles */
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.5em;
+  }
 
   .content-wrapper {
     max-width: 960px;
@@ -598,7 +673,12 @@ aside {
     flex-basis: 33%;
   }
 
-  /* Reviews */ 
+  /* Reviews */
+
+  .reviews h3 {
+    width: 75%;
+  }
+
   .reviews article div {
     width: 42%;
   }
@@ -608,6 +688,7 @@ aside {
   ========================================================================== */
   .mission h2,
   .contact-section .content-wrapper h2 {
+    font-size: 3em;
     width: 100%;
   }
 
@@ -620,11 +701,18 @@ aside {
   FAQ Page
   ========================================================================== */
   .faq h2 {
+    font-size: 3em;
     width: 100%;
   }
 
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1.125em;
+  }
+
   .faq-content {
-    flex-basis: 35%;
+    flex-basis: 45%;
   }
 
 }
