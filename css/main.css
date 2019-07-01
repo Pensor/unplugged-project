@@ -110,10 +110,18 @@ body {
   font-size: 1em;
 }
 
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: 500;
+  margin: 0;
+}
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -122,6 +130,7 @@ h4 {
   font-size: 1.125em;
   font-weight: 500;
   line-height: 1.5em;
+  margin: 0;
 }
 
 p {
@@ -138,11 +147,11 @@ ul {
 }
 
 img {
- 
+  width: 100%;
 }
  
 figure {
- 
+ margin: 0;
 }
  
 address {
@@ -184,6 +193,13 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 69%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header .header-divider {
@@ -257,9 +273,12 @@ footer .copyright {
 /* -------------------- Mobile Styles Homepage-------------------- */
 
 .hero-area {
+  background: url('../img/hero-img.jpg') center no-repeat #333;
+  background-size: cover;
+  height: 500px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -281,6 +300,7 @@ input[type=email] {
   height: 50px;
   color: #2a423a;
   font-style: italic;
+  margin-top: 20px;
 }
 
 input[type=submit] {
@@ -298,6 +318,8 @@ input[type=submit] {
 }
 
 .features {
+  background: url('../img/features-bg-img.jpg') center no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -345,7 +367,6 @@ input[type=submit] {
 
 .reviews h3 {
   margin: 20px 0;
-  width: 50%;
 }
 
 /* -------------------- Mobile Styles About-------------------- */
@@ -370,8 +391,12 @@ input[type=submit] {
   flex-flow: row wrap;
 }
 
+.contact-section h2 {
+  margin: 10px 0;
+}
+
 .contact-content p {
-  margin: 0;
+  margin: 10px 0;
 }
 
 /* -------------------- Mobile Styles FAQ-------------------- */
@@ -491,6 +516,10 @@ input[type=submit] {
   @media only screen and (min-width: 768px) {
   /* General styles */
   
+  h1 {
+    font-size: 3em;
+  }
+
   h2 {
     font-size: 2.25em;
     /* line-height: 3em; */
@@ -499,23 +528,27 @@ input[type=submit] {
   h3,
   h4 {
     font-size: 1.5em;
-    line-height: 1.875em;
+    line-height: 1.5em;
   }
 
   .content-wrapper {
     max-width: 640px;
-    margin: 100px 0;
+    /* margin: 100px 0; */
   }
 
   /* Header */
 
-  header {
+  /* header {
     justify-content: space-around;
-  }
+  } */
 
   header .content-wrapper {
     justify-content: space-between;
     width: 100%;
+  }
+
+  header figure {
+    justify-content: flex-start;
   }
 
   header nav {
@@ -532,6 +565,10 @@ input[type=submit] {
 
   /* Hero Area */
 
+  .hero-area {
+    height: 600px;
+  }
+
   /* Aside */
   aside .content-wrapper {
     display: flex;
@@ -542,7 +579,7 @@ input[type=submit] {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {        
-    width: 35%;    
+    width: 45%;    
     margin: 0;
   }
 
@@ -561,13 +598,23 @@ input[type=submit] {
   }
 
   /* Reviews */
+
+  .reviews h3 {
+    margin: 0;
+  }
+
   .reviews article {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
   }
   
+  .reviews figure {
+    width: 50%;
+  }
+
   .reviews article div {
-    width: 50%;        
+    width: 45%;        
   }
 
   /* Footer */
@@ -601,6 +648,11 @@ input[type=submit] {
 
   .contact-section .content-wrapper h2 {
     width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .contact-section .content-wrapper h4 {
+    margin-bottom: 10px;
   }
 
   .contact-content {
@@ -634,10 +686,14 @@ input[type=submit] {
 @media only screen and (min-width: 1200px) {
 /*Desktop styles here*/
   /* Genral Styles */
+  h1 {
+    font-size: 3.75em;
+  }
 
   h3,
   h4 {
     font-size: 1.875em;
+    line-height: 1.5em;
   }
 
   p {
@@ -651,7 +707,7 @@ input[type=submit] {
 
   /* Hero */
   .hero-area h1 {
-    width: 60%;
+    width: 70%;
   }
 
   /* Aside */
@@ -691,11 +747,6 @@ input[type=submit] {
     font-size: 3em;
     width: 100%;
   }
-
-  /* .contact-section .content-wrapper h2 {
-  margin-bottom: 
-  } */
-
 
   /* ==========================================================================
   FAQ Page
