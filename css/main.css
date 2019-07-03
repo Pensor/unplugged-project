@@ -241,7 +241,12 @@ footer .content-wrapper {
 footer .social {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+footer h4 {
+  margin-bottom: 40px;
 }
 
 footer .social-icons {
@@ -254,6 +259,10 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #527158;
+  border-radius: 50%;
 }
 
 footer p {
@@ -644,6 +653,10 @@ input[type=submit] {
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer .social {
+    width: 40%;
   }
   
   /* -------------------- Tablet Styles About-------------------- */
