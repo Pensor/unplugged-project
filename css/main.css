@@ -251,7 +251,7 @@ footer h4 {
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -373,6 +373,7 @@ input[type=submit] {
 
 .reviews h3 {
   margin: 20px 0;
+  width: 55%;
 }
 
 /* -------------------- Mobile Styles About-------------------- */
@@ -540,7 +541,6 @@ input[type=submit] {
 
   h2 {
     font-size: 2.25em;
-    /* line-height: 3em; */
   }
 
   h3,
@@ -602,6 +602,11 @@ input[type=submit] {
   }
 
   /* Features */
+
+  .features h2 {
+    margin-bottom: 30px;
+  }
+
   .features .features-items{
     flex-flow: row wrap;
   }
@@ -614,14 +619,21 @@ input[type=submit] {
     flex-basis: 50%;
   }
 
+  .features i {
+    font-size: 4.5em;
+  }
+
   .features .features-item-description {
-    width: 70%
+    width: 60%
   }
 
   /* Reviews */
-
+  .reviews h2 {
+    width: 80%;
+  }
   .reviews h3 {
     margin: 0;
+    width: 80%;
   }
 
   .reviews article {
@@ -660,6 +672,9 @@ input[type=submit] {
   }
   
   /* -------------------- Tablet Styles About-------------------- */
+  .mission h2 {
+    width: 95%;
+  }
 
   .mission-content {
     display: flex;
@@ -697,7 +712,7 @@ input[type=submit] {
   }
 
   .faq-content {
-    flex-basis: 40%;
+    flex-basis: 45%;
   }
 
   .faq h2 {
@@ -732,6 +747,11 @@ input[type=submit] {
 
   .content-wrapper {
     max-width: 960px;
+  }
+  /* Footer */
+
+  footer .social-icons {
+    justify-content: space-around;
   }
 
   /* Hero */
